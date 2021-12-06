@@ -1,0 +1,2 @@
+class CatItemsController < ApplicationController
+end
