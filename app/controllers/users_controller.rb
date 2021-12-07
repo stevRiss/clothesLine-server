@@ -3,6 +3,28 @@ class UsersController < ApplicationController
         users = User.all 
         render json: users
     end
+
+
+    def create
+        new_user = User.create(u_params)
+        if new_user.valid?
+            #logs new user in
+            session[:user_id] = new_user.id 
+            render json: new_user, status: :created
+        else
+            render json: new_user.errors.full_messages, status: 404
+        end
+    end
+
+    def show
+        # user = User.find_by(params[:id])
+        if curr_user
+            render json: curr_user, status: :ok      #checks to see weather user has current session
+
+        else 
+            render json: "ABORTED", status: :unauthorized 
+        end
+    end
     
 
     
