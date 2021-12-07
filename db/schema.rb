@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_12_06_212831) do
+ActiveRecord::Schema.define(version: 2021_12_07_140329) do
 
   create_table "cat_items", force: :cascade do |t|
     t.integer "category_id", null: false
@@ -48,6 +48,7 @@ ActiveRecord::Schema.define(version: 2021_12_06_212831) do
     t.boolean "seller"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "password_digest"
   end
 
   add_foreign_key "cat_items", "categories"
