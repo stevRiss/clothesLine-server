@@ -4,6 +4,7 @@ class CreateItems < ActiveRecord::Migration[6.1]
       t.string :name
       t.float :price
       t.string :size
+      t.string :image
       t.string :color
       t.boolean :sold
       t.references :seller, foreign_key: { to_table: 'users'}
