@@ -6,7 +6,7 @@ include ActionController::Cookies
 private 
 
 def curr_user
-    User.find_by(id: sessions[:user_id])
+    User.find_by(id: session[:user_id])
 end
 
 end

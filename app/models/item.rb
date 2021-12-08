@@ -4,4 +4,6 @@ class Item < ApplicationRecord
 
     has_many :cat_items
     has_many :categories, through: :cat_items
+
+     
 end
