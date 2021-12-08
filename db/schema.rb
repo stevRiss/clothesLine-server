@@ -31,6 +31,7 @@ ActiveRecord::Schema.define(version: 2021_12_07_140329) do
     t.string "name"
     t.float "price"
     t.string "size"
+    t.string "image"
     t.string "color"
     t.boolean "sold"
     t.integer "seller_id"
