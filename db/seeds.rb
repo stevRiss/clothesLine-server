@@ -60,3 +60,10 @@ CatItem.create(item: t8, category: t_shirts)
 CatItem.create(item: jacket1, category: jackets)
 CatItem.create(item: jacket6, category:jackets )
 CatItem.create(item: t9, category: t_shirts)
+
+
+
+["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTueusb2fHyL1JlPahDnw1VJcmGnQjI98UGZg&usqp=CAU", "https://www.google.com/imgres?imgurl=https%3A%2F%2Flookaside.fbsbx.com%2Flookaside%2Fcrawler%2Fmedia%2F%3Fmedia_id%3D3608962822489901&imgrefurl=https%3A%2F%2Fwww.facebook.com%2FDavidsApparel%2F&tbnid=RVtI9A2fKTooCM&vet=12ahUKEwjZk7b2xtL0AhVho3IEHSRGAe8QMygregUIARCsBA..i&docid=26hWy2D5d-6bdM&w=960&h=640&itg=1&q=men%27s%20apparel&ved=2ahUKEwjZk7b2xtL0AhVho3IEHSRGAe8QMygregUIARCsBA",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsUSofH5_lI1Wp_n67q3ku8sbqOFz7aeR4LQ&usqp=CAU", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtSqXvpbgBHif_KmpzD7Ox0MrdAOyrJi3e6w&usqp=CAU", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREdItUKVxKH5yYsco4sIsP4VYBlzrWhEG9OA&usqp=CAU", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiVGXsihE3bD72BVN-gKFXAgGSs22ilUdKDg&usqp=CAU", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9kP4-sbwEnyxjxmaXniB64PdIo79M9nK95Q&usqp=CAU", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXzF35x5ZxVf_CmdDMSeOdy_2Vc1MWPdF1ng&usqp=CAU", "
+    https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNguQwLR-lDxthckRvPHcmaLi1pawVs0BMKA&usqp=CAU", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRapeFdvWFxAdBIWQ4A_n-q2vuzfvH0VMfqA&usqp=CAU", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJ6IqDAqTbYwurF8oJ2bAah1mrWR1IPTSpIA&usqp=CAU", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpAtl4MMtWevp4r2DJYzOyF53YPtkwIiabUg&usqp=CAU", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjLcncvdim0jBooUlAycYx408Ym4ECcqBzwg&usqp=CAU", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHLzkO6XVWdd3poj-DML7zw5DI9QQlJfSBGA&usqp=CAU"
+   ]
