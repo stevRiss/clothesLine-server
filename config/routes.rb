@@ -11,8 +11,9 @@ Rails.application.routes.draw do
 
   get '/me', to: "users#show" #authenticating checking to see if user is already lgged in
 
-  post '/login', to: 'sessions#create'
 
-  delete 'logout', to: 'sessions#destroy'
+  post '/signin', to: 'sessions#create' 
+
+  delete '/logout', to: 'sessions#destroy'
 
 end
