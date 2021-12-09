@@ -17,9 +17,9 @@ class UsersController < ApplicationController
     end
 
     def show
-        # user = User.find_by(params[:id])
-        if curr_user
-            render json: curr_user, status: :ok      #checks to see weather user has current session
+        user = User.find_by(params[:id])
+        if user
+            render json:  user, status: :ok      #checks to see weather user has current session
 
         else 
             render json: "ABORTED", status: :unauthorized 

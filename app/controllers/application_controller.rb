@@ -5,7 +5,7 @@ include ActionController::Cookies
 
 private 
 
-def curr_user
+def current
     User.find_by(id: session[:user_id])
 end
 
