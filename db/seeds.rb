@@ -1,10 +1,10 @@
 
-mens_apparel = Category.create(name: "mens apparel")
-womens_apparel = Category.create(name: "womens apparel")
-t_shirts = Category.create(name: " t-shirts")
-sweatshirts = Category.create(name: "sweatshirts")
-jackets = Category.create(name: "jackets")
-pants = Category.create(name: 'pants')
+mens_apparel = Category.create(name: "Mens")
+womens_apparel = Category.create(name: "Womens")
+t_shirts = Category.create(name: "T-shirts")
+sweatshirts = Category.create(name: "Sweatshirts")
+jackets = Category.create(name: "Jackets")
+pants = Category.create(name: 'Pants')
 
 
 
@@ -48,7 +48,7 @@ jacket7 = Item.create(name: "Puffer ", price: 25.00, size: "large",image:'https:
 
 
 
-CatItem.create(item: jacket2, category: jackets)
+CatItem.create(item: jacket2, category:pants)
 CatItem.create(item: jacket4, category: jackets)
 CatItem.create(item: t4, category: womens_apparel)
 CatItem.create(item: t2, category: mens_apparel)
@@ -57,7 +57,7 @@ CatItem.create(item: t2, category: t_shirts)
 
 CatItem.create(item: jacket5, category: jackets)
 CatItem.create(item: jacket3, category: jackets)
-CatItem.create(item: t10, category: t_shirts)
+CatItem.create(item: t10, category: sweatshirts)
 CatItem.create(item: t8, category: t_shirts)
 CatItem.create(item: jacket1, category: jackets)
 CatItem.create(item: jacket6, category:jackets )
