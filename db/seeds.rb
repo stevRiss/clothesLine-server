@@ -12,7 +12,11 @@ pants = Category.create(name: 'Pants')
 sriss22 = User.create(username: "sriss22", email: "sriss22@gmail.com", seller: true)
 ycasa23= User.create(username: 'ycasa23', email: 'ycasa23@gmail.com', seller:true)
 
+
+
+
 t1 = Item.create(name: "big shirt", price: 10.00, size: "large",image:'https://target.scene7.com/is/image/Target/GUEST_f410f7c2-3cce-458b-a6ae-6864bb8d39b4?wid=488&hei=488&fmt=pjpeg', color: "Blue", seller: sriss22)
+
 t2 = Item.create(name: "shirt", price: 15.00, size: "Medium",image:'https://qph.fs.quoracdn.net/main-qimg-0bf8dcb0181fd7a8b4f6c36a9085efe3-lq', color: "green", seller: ycasa23)
 t3 = Item.create(name: "Astro shirt", price: 15.00, size: "small",image:'https://i5.walmartimages.com/asr/1749f641-bafb-4b69-be21-976ade379eae_1.cfbcdeec38a748a39291a70a0e733594.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF', color: "red", seller: sriss22)
 t4 = Item.create(name: "Blue T-shirt", price: 20.00, size: "small",image:'https://i5.walmartimages.com/asr/b8983015-9ab6-44e2-9189-1412e2221326_1.bb50d226facae842c990ca3c6af0e0f0.jpeg', color: "blue", seller: sriss22)
@@ -46,6 +50,7 @@ jacket6 =Item.create(name: "Fur Coat", price: 100.00, size: "medium",image:'http
 jacket7 = Item.create(name: "Puffer ", price: 25.00, size: "large",image:'https://media.boohooman.com/i/boohooman/mzz16184_black_xl?pdp.template', color: "gray", seller: ycasa23)
 
 
+cart_1 = Cart.create(name:"big shirt",  price: 10.00, user_id: sriss22.id, item_id: t1.id )
 
 
 CatItem.create(item: jacket2, category:pants)
