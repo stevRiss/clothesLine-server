@@ -9,13 +9,21 @@ class SessionsController < ApplicationController
       render json: user, status: :ok 
     else
       
-      render json: "INVALID pls log in", status: 401
+      render json: user.errors.full_messages, status: 401
     end
   end
 
   def destroy
-    puts "########################### user_id > #{session[:user_id]} < ##########"
-    session.delete :user_id
+    if current
+      puts "########################### user_id > #{session[:user_id]} < ##########"
+
+      session.delete :user_id
+    else
+      puts "########################### user_id > #{session[:user_id]} < ##########"
+
+      render json: "INVALID pls log in", status: 401
+
+    end
   end
 
 end

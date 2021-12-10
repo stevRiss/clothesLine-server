@@ -1,3 +1,5 @@
+require 'faker'
+
 
 mens_apparel = Category.create(name: "Mens")
 womens_apparel = Category.create(name: "Womens")
@@ -48,6 +50,44 @@ jacket4 = Item.create(name: "White leather jacket", price: 65.00, size: "large",
 jacket5 = Item.create(name: "Black fuzzy jacket", price: 28.00, size: "small",image:'https://m.media-amazon.com/images/I/81rqDMAs77L._AC_UX385_.jpg', color: "black", seller: ycasa23)
 jacket6 =Item.create(name: "Fur Coat", price: 100.00, size: "medium",image:'https://kaufmanfurs.com/wp-content/uploads/2017/09/DSC03453-scaled.jpg', color: "brown", seller: sriss22)
 jacket7 = Item.create(name: "Puffer ", price: 25.00, size: "large",image:'https://media.boohooman.com/i/boohooman/mzz16184_black_xl?pdp.template', color: "gray", seller: ycasa23)
+jacket7 = Item.create(name: "White Fuzzy Jacket ", price: 30.00, size: "Medium",image:'https://cdn3.volusion.com/tuac7.56np9/v/vspfiles/photos/KJ6226White-2.jpg?v-cache=1606349601', color: "White", seller: ycasa23)
+jacket8 = Item.create(name: "Blue Leather Jacket ", price: 30.00, size: "Small",image:'https://celebleatherjackets.com/image/cache/catalog/2020/Feb/biker-royal-blue-faux-leather-jacket-910x1155.jpg', color: "Blue", seller: ycasa23)
+
+pants1 = Item.create( name: 'Denim Jeans', price: 65.00, size: 'Medium', image: 'https://www.promod.eu/gaston-straight-leg-jeans--gz705735-s7-produit-1300x1399.jpg', color: 'Blue', seller: sriss22)
+pants2 = Item.create( name: 'Black Jeans', price: 45.00 , size: 'Small', image: 'https://media.thereformation.com/image/upload/f_auto,q_auto:eco/c_scale,w_auto:breakpoints_100_1668_9_20/v1/prod/product_images/harper-high-rise-skinny-jeans/black/5b9073ba8858db4b4c19490a/original.jpg', color: '', seller:sriss22)
+pants3 = Item.create( name: 'Leather Pants', price: 100.00 , size: 'Medium', image: 'https://cdn-img.prettylittlething.com/b/8/8/0/b88001ca51b71023d189b9f0313e4f05c11ab159_cml5609_2.jpg', color: 'Black', seller:sriss22)
+pants4 = Item.create( name: 'Lather Pants', price: 95.00 , size: 'Large', image: 'https://media.missguided.com/i/missguided/R9347803_01', color: 'Black', seller: sriss22)
+pants5 = Item.create( name: 'High Waisted Trouser Pants', price: 85.00 , size: 'Medium', image: 'https://www.lulus.com/images/product/xlarge/4423730_319052.jpg?w=375&hdpi=1', color: 'Gray', seller:sriss22)
+pants6 = Item.create( name: 'High Waisted Wide Leg Pants', price:85.00 , size: 'Medium', image: 'https://d1flfk77wl2xk4.cloudfront.net/Assets/49/573/L_p0111057349.jpg', color: 'Brown', seller:sriss22)
+pants7 = Item.create( name: 'High Waisted Trouser Pants', price: 90.00 , size: 'Large', image: 'https://m.media-amazon.com/images/I/514YqVW7wkL._AC_UX385_.jpg', color: 'yellow', seller:sriss22)
+pants8 = Item.create( name: 'Yoga Pants (With Pockets)', price: 40.00 , size: 'small', image: 'https://m.media-amazon.com/images/I/51r7TK-pyFS._AC_UX425_.jpg', color: 'Black', seller: sriss22)
+pants9 = Item.create( name: 'Yoga Pants', price: 40.00 , size: 'Small', image: 'https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1627415390-best-yoga-leggings-alo-yoga-illusion-seamless-high-waist-legging-1627415375.jpg', color: 'Pink', seller: sriss22)
+pants10 = Item.create( name: 'Causual Mens Yoga Pants', price: 50.00 , size: 'Medium', image: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/yoga-pants-2-1626814442.jpg?crop=0.502xw:1.00xh;0.250xw,0&resize=640:*', color: 'Beige', seller: sriss22)
+pants11= Item.create( name: 'Slacks', price: 60.00 , size: 'Large', image: 'https://mobileimages.lowes.com/productimages/8df2e7ef-634f-438e-833d-a7a23d8cbc78/11067873.jpg?size=pdhi', color: 'Brown', seller: sriss22)
+pants12 = Item.create( name: 'Cargo Pants', price: 45.00 , size: 'Medium', image: 'https://canary.contestimg.wish.com/api/webimage/5df1f1a308082f0c287fc6b6-large.jpg?cache_buster=ff1a74d8f375d1323efee6ac96f01473', color: 'Yellow', seller:sriss22)
+
+
+CatItem.create(item: pants1, category: pants)
+CatItem.create(item: pants2, category: pants)
+CatItem.create(item: pants3, category: pants)
+CatItem.create(item: pants4, category: pants)
+CatItem.create(item: pants5, category: pants)
+CatItem.create(item: pants6, category: pants)
+CatItem.create(item: pants7, category: pants)
+CatItem.create(item: pants8, category: pants)
+CatItem.create(item: pants9, category: pants)
+CatItem.create(item: pants10, category: pants)
+CatItem.create(item: pants11, category: pants)
+CatItem.create(item: pants12, category: pants)
+
+
+
+
+CatItem.create(item: pants7, category: womens_apparel)
+CatItem.create(item: pants6, category: womens_apparel)
+CatItem.create(item: pants5, category: womens_apparel)
+CatItem.create(item: jacket2, category:womens_apparel)
+CatItem.create(item: jacket4, category: womens_apparel)
 
 
 cart_1 = Cart.create(name:"big shirt",  price: 10.00, user_id: sriss22.id, item_id: t1.id )
@@ -59,6 +99,7 @@ CatItem.create(item: t4, category: womens_apparel)
 CatItem.create(item: t2, category: mens_apparel)
 CatItem.create(item: t2, category: t_shirts)
 
+CatItem.create(item: jacket7, category: jackets)
 
 CatItem.create(item: jacket5, category: jackets)
 CatItem.create(item: jacket3, category: jackets)

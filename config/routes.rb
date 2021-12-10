@@ -11,6 +11,7 @@ Rails.application.routes.draw do
 
   get '/me', to: "users#show" #authenticating checking to see if user is already lgged in
 
+  
 
   post '/signin', to: 'sessions#create' 
 
